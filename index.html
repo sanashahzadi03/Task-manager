@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/ifjBHzpugt0tDhXfVoCyrrr47YhwgZAlYzOvbrcZEII/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDI4LzE2/NS8zNjAvbm9uXzJ4/L3Rhc2stbWFuYWdl/ci1pY29uLXZlY3Rv/ci5qcGc" type="image/x-icon">
+</head>
+<body>
+
+    <div class="todo-container">
+        <h2>Task Manager</h2>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required autocomplete="off">
+            <button type="submit" id="add-btn">Add Task</button>
+        </form>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
